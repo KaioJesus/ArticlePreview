@@ -45,3 +45,36 @@ body{
     color: hsl(214, 17%, 51%);
 
 }
+
+.card__div-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em 2em;
+    line-height: 16px;
+}
+
+.card__div-name{
+}
+
+.avatar{
+    border-radius: 100%;
+    width: 15%;
+}
+
+.card__div-name-text{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+.card__div-name-text-date{
+    color: hsl(212, 23%, 69%);
+}
+
+.social__medias{
+    display: none;
+}
+
+.button__share{
+    background: hsl(210, 46%, 95%);
+}
