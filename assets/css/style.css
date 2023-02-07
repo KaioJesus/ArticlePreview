@@ -1,6 +1,8 @@
 :root{
     --cor-de-fundo: hsl(210, 46%, 95%);
     --branco: #ffffff;
+    --cor-botao-ativo: hsl(214, 17%, 51%);
+    --cor-botao: hsl(210, 46%, 95%);
 }
 
 body{
@@ -83,6 +85,7 @@ body{
 .button__share{
     background: hsl(210, 46%, 95%);
     border-radius: 100%;
+    height: fit-content;
     /* width: 10% */
 }
 .button__share:focus-within{
@@ -93,11 +96,55 @@ body{
     background: white;
 }
 
+.social__medias{
+    display: none;
+    background-color: var( --cor-botao-ativo);
+    border-radius: 0 0 8px 8px;
+
+}
+
+.social__medias-container{
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+.social__medias-container-2{
+    padding-right: 8px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social__medias-container-2 p {
+    /* margin-right:4px; */
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 16px;
+}
+
+.social__medias-container-2 a {
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.social__medias-icones{
+    width: 120%
+}
+
 @media screen and (min-width: 1024px) {
 
     .card__section{
         width: 30%;
 
+    }
+
+    .social__medias{
+        display: none;
+        background-color: var( --cor-botao-ativo);
+        border-radius: 0 0 8px 8px;
+    
     }
 }
 
@@ -111,5 +158,9 @@ body{
 
     .card__img{
         height: 100%;
+    }
+
+    .social__medias{
+        position: absolute;
     }
 }
