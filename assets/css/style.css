@@ -85,6 +85,31 @@ body{
     border-radius: 100%;
     /* width: 10% */
 }
-.button__share:active{
+.button__share:focus-within{
     background: hsl(214, 17%, 51%);
+}
+
+.button_share img:focus-within{
+    background: white;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .card__section{
+        width: 30%;
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .card__section{
+        display: flex;
+        width: 45%;
+
+    }
+
+    .card__img{
+        height: 100%;
+    }
 }
